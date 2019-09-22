@@ -98,6 +98,7 @@ namespace Hafta_1_Toplama_Ödevi
                 
                 )
                 e.Handled = true;
+           
         }
 
         private void TxtIkinciSayi_KeyPress(object sender, KeyPressEventArgs e)

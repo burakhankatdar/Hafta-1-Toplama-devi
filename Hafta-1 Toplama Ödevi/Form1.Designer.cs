@@ -46,6 +46,7 @@
             // 
             this.txtBirinciSayi.Location = new System.Drawing.Point(124, 66);
             this.txtBirinciSayi.Name = "txtBirinciSayi";
+            this.txtBirinciSayi.ShortcutsEnabled = false;
             this.txtBirinciSayi.Size = new System.Drawing.Size(158, 22);
             this.txtBirinciSayi.TabIndex = 0;
             this.txtBirinciSayi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBirinciSayi_KeyPress);
@@ -72,6 +73,7 @@
             // 
             this.txtIkinciSayi.Location = new System.Drawing.Point(124, 94);
             this.txtIkinciSayi.Name = "txtIkinciSayi";
+            this.txtIkinciSayi.ShortcutsEnabled = false;
             this.txtIkinciSayi.Size = new System.Drawing.Size(158, 22);
             this.txtIkinciSayi.TabIndex = 4;
             this.txtIkinciSayi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtIkinciSayi_KeyPress);
