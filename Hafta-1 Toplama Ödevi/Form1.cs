@@ -25,21 +25,7 @@ namespace Hafta_1_Toplama_Ödevi
 
         }
 
-        Boolean Dogrula()
-        {
-
-            try
-            {
-                Convert.ToDouble(txtBirinciSayi.Text);
-                Convert.ToDouble(txtIkinciSayi.Text);
-            }
-            catch (Exception)
-            {
-
-                return false;
-            }
-            return true;
-        }
+        
 
         double Topla(double sayi1, double sayi2)
         {
@@ -50,8 +36,8 @@ namespace Hafta_1_Toplama_Ödevi
 
 
 
-            if (Dogrula())
-            {
+            
+       
             double birinciSayi, ikinciSayi, toplam;
 
             birinciSayi = Convert.ToDouble(txtBirinciSayi.Text);
@@ -61,11 +47,8 @@ namespace Hafta_1_Toplama_Ödevi
 
             MessageBox.Show(Convert.ToString("Sonucunuz: " + toplam));
 
-            }
-            else
-            {
-                MessageBox.Show("Girdiğiniz Değer Hatalı! Lütfen Tekrar Deneyiniz");
-            }
+            
+            
                 
                 
 
