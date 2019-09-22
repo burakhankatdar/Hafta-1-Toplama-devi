@@ -25,6 +25,11 @@ namespace Hafta_1_Toplama_Ödevi
 
         }
 
+        void LogYaz(string Mesaj)
+        {
+            lvLog.Items.Add(Mesaj);
+        }
+
         
 
         double Topla(double sayi1, double sayi2)
@@ -62,11 +67,12 @@ namespace Hafta_1_Toplama_Ödevi
             toplam = Topla(birinciSayi, ikinciSayi);
 
             MessageBox.Show(Convert.ToString("Sonucunuz: " + toplam));
-
+                LogYaz("Sonucunuz: " + toplam);
             }
             else
             {
                 MessageBox.Show("Girdiğiniz Değer Hatalı! Lütfen Tekrar Deneyiniz ");
+                LogYaz("Hatalı Giriş!");
             }
 
             
@@ -86,13 +92,10 @@ namespace Hafta_1_Toplama_Ödevi
         private void TxtBirinciSayi_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (
-
-                char.IsLetter(e.KeyChar) ||
-                char.IsSymbol(e.KeyChar) ||
                 char.IsWhiteSpace(e.KeyChar) ||
-                char.IsPunctuation(e.KeyChar)
-
-
+                char.IsSymbol(e.KeyChar) ||
+                char.IsLetter(e.KeyChar)
+                
                 )
                 e.Handled = true;
         }
@@ -100,12 +103,9 @@ namespace Hafta_1_Toplama_Ödevi
         private void TxtIkinciSayi_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (
-
-                char.IsLetter(e.KeyChar) ||
-                char.IsSymbol(e.KeyChar) ||
                 char.IsWhiteSpace(e.KeyChar) ||
-                char.IsPunctuation(e.KeyChar)
-
+                char.IsLetter(e.KeyChar) ||
+                char.IsSymbol(e.KeyChar) 
 
                 )
                 e.Handled = true;
