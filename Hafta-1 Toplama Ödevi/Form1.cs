@@ -70,11 +70,6 @@ namespace Hafta_1_Toplama_Ödevi
             }
 
             
-            
-                
-                
-
-
 
         }
 
@@ -86,6 +81,34 @@ namespace Hafta_1_Toplama_Ödevi
         private void Form1_Shown(object sender, EventArgs e)
         {
             EkranHazirla();
+        }
+
+        private void TxtBirinciSayi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (
+
+                char.IsLetter(e.KeyChar) ||
+                char.IsSymbol(e.KeyChar) ||
+                char.IsWhiteSpace(e.KeyChar) ||
+                char.IsPunctuation(e.KeyChar)
+
+
+                )
+                e.Handled = true;
+        }
+
+        private void TxtIkinciSayi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (
+
+                char.IsLetter(e.KeyChar) ||
+                char.IsSymbol(e.KeyChar) ||
+                char.IsWhiteSpace(e.KeyChar) ||
+                char.IsPunctuation(e.KeyChar)
+
+
+                )
+                e.Handled = true;
         }
     }
 }
