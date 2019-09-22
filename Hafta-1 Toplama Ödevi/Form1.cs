@@ -66,7 +66,7 @@ namespace Hafta_1_Toplama_Ödevi
             }
             else
             {
-                MessageBox.Show("Girdiğiniz Değer Hatalı ! Lütfen Tekrar Deneyiniz ");
+                MessageBox.Show("Girdiğiniz Değer Hatalı! Lütfen Tekrar Deneyiniz ");
             }
 
             
