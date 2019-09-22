@@ -17,6 +17,14 @@ namespace Hafta_1_Toplama_Ödevi
             InitializeComponent();
         }
 
+        void EkranHazirla()
+        {
+            txtBirinciSayi.Text = "0";
+            txtIkinciSayi.Text = "0";
+            txtBirinciSayi.Focus();
+
+        }
+
         double Topla(double sayi1, double sayi2)
         {
             return (sayi1 + sayi2);
@@ -34,6 +42,16 @@ namespace Hafta_1_Toplama_Ödevi
 
 
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            EkranHazirla();
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            EkranHazirla();
         }
     }
 }
